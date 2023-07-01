@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!----===== Bootstrap ===== -->
+
+    <!----===== JS ===== -->
+
+
+
+    <title>Rank & Control - Home </title>
+    </head>
+
+    <body>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="logonova.png" alt="">
+                    </span>
+
+                    <div class="text logo-text">
+                        <span class="name">Rank & Control</span>
+
+                    </div>
+                </div>
+
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+
+            <div class="menu-bar">
+                <div class="menu">
+
+
+                    <!--
+                    Esta tela deixa o Home selecionado
+                    Para deixar outos selecionados coloque no <a hrerf>
+                        style =
+                        background-color: var(--primary-color);
+                        border-left: 5px solid #0e2230;
+                -->
+
+
+
+
+                    <ul class="menu-links">
+                        <li class="nav-linkhome">
+                            <a href="../../Login/tela_home.html">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="../TelaPlanoSucessao/index.html" style="background-color: var(--primary-color);
+                        border-left: 5px solid #0e2230;;">
+                                <i class='bx bx-briefcase icon'></i>
+                                <span class="text nav-text">Plano de sucessão</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="../Tela9Box/index.html">
+                                <i class='bx bxs-inbox icon'></i>
+                                <span class="text nav-text">Nine Box</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="../TelaPesquisa/index.html">
+                                <i class='bx bx-search icon'></i>
+                                <span class="text nav-text">Pesquisa</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="../TelaEditar/index.php">
+                              <i class='bx bx-pencil icon'></i>
+                              <span class="text nav-text">Editar</span>
+                            </a>
+                          </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="bottom-content">
+
+
+
+                    <li class="nav-link">
+                        <a href="../SobreNos/index.html">
+                            <i class='bx bxs-group icon'></i>
+                            <span class="text nav-text">Sobre Nós</span>
+                        </a>
+                    </li>
+
+
+
+
+                    <li class="">
+                        <a href="../../Login/index.html">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+
+
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="home">
+
+
+            <form id="regForm" action="cadastrar.php" method="POST" enctype="multipart/form-data">
+
+
+                <div class="campos">
+                    <div class="tab">
+
+                        <header>Posição</header>
+
+
+                        <div class="form first" style="width: 100%;">
+
+                            <div class="fields">
+                                <div class="input-field" style="width: 26.6vw;">
+                                    <label>Nome da UO</label>
+                                    <input type="text" name="nome_da_UO_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 26.6vw;">
+                                    <label>Diretoria</label>
+                                    <input type="text" name="diretoria_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 7.9vw;">
+                                    <label>Número VW Superior</label>
+                                    <input type="number" name="numeroVW_superior_direto" required>
+                                </div>
+
+                                <div class="input-field" style="width: 26.6vw;">
+                                    <label>Superior Direto</label>
+                                    <input type="text" name="superior_direto_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 4.7vw;">
+                                    <label>UO Abrev</label>
+                                    <input type="text" name="abreviacao_UO_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 4.7vw;">
+                                    <label>É G70?</label>
+                                    <select required name="g70_posicao">
+                                        <option disabled selected>Selecione</option>
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-field" style="width: 8.3vw;">
+                                    <label>Número VW Superior G70</label>
+                                    <input type="number" name="numeroVW_superior_g70_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 26.6vw;">
+                                    <label>Superior G70</label>
+                                    <input type="text" name="superior_g70_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 7.9vw;">
+                                    <label>Local</label>
+                                    <input type="text" name="local_posicao" required>
+                                </div>
+
+                                <div class="input-field" style="width: 5.3vw;">
+                                    <label>Código da UO</label>
+                                    <input type="number" name="codigoUO_posicao">
+                                </div>
+
+                                <div class="input-field" style="width: 15.3vw;">
+                                    <label>Job Evaluation</label>
+                                    <input type="text" name="job_evaluation_posicao">
+                                </div>
+
+                                
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-------------------- FORM OCUPANTE -------------------->
+
+                <div class="tab">
+                    <header>Ocupante</header>
+
+                    <div class="fields">
+                        <input type="file" name="path_arquivos_ocupante" accept="image/png, image/jpeg"
+                            style="width: 26.6vw;">
+                    </div>
+
+                    <div class="fields">
+                        <div class="input-field" style="width: 26.6vw;">
+                            <label>Nome</label>
+                            <input type="text" name="nome_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 26.6vw;">
+                            <label>Cargo</label>
+                            <input type="text" name="cargo_ocupante" required>
+                        </div>
+                        <br>
+
+                        <div class="input-field" style="width: 7.9vw;">
+                            <label>Número VW</label>
+                            <input type="number" name="numeroVW_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 3.7vw;">
+                            <label>Grau</label>
+                            <input type="number" name="grau_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 7.9vw;">
+                            <label>Gênero</label>
+                            <select required name="genero_ocupante">
+                                <option disabled selected>Selecione</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+
+                            </select>
+                        </div>
+
+                        <div class="input-field" style="width: 3.7vw;">
+                            <label>Idade</label>
+                            <input type="number" name="idade_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 4.7vw;">
+                            <label>Tempo de VW</label>
+                            <input type="number" name="tempo_de_VW_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 9.5vw;">
+                            <label>Na Posição Desde</label>
+                            <input type="date" name="na_posicao_desde_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 4.2vw;">
+                            <label>Último GAP</label>
+                            <input type="text" name="ultimoGAP_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 4.2vw;">
+                            <label>Último MBO</label>
+                            <input type="text" name="ultimoMBO_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 7.9vw;">
+                            <label>Última avaliação geral</label>
+                            <input type="text" name="ultima_avaliacao_geral_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 26.6vw;">
+                            <label>Critérios de acesso</label>
+                            <input type="text" name="criterios_acesso_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 4.2vw;">
+                            <label>Eixo What</label>
+                            <input type="text" name="eixoWhat_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 10.1vw;">
+                            <label>Posição anterior no 9Box</label>
+                            <input type="number" name="posicao_anterior_9box_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 26.6vw;">
+                            <label>Critérios de apontamento</label>
+                            <input type="text" name="criterios_de_apontamento_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 4.2vw;">
+                            <label>Eixo How</label>
+                            <input type="text" name="eixoHow_ocupante" required>
+                        </div>
+
+                        <div class="input-field" style="width: 10.1vw;">
+                            <label>Posição atual no 9Box</label>
+                            <input type="number" name="posicao_atual_9box_ocupante" required>
+                        </div>
+
+
+                        <div class="input-field" style="width: 500px; height: 200px;">
+                            <label>Próximos passos</label>
+                            <textarea id="txtArea" name="proximos_passos_ocupante" required rows="10"
+                                cols="70"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-------------------- SUCESSOR IMEDIATO -------------------->
+
+                <div class="tab">
+                    <header>Sucessor Imediato</header>
+
+                    <div class="fields">
+                        <div class="form first">
+                            <div class="details personal">
+
+
+
+                                <div class="fields" style="width: 45vw;">
+                                    <input type="file" name="path_arquivos_imediato" accept="image/png, image/jpeg"
+                                        style="width: 26.6vw;">
+
+                                    <div style="width: 1000px;"></div>
+
+                                    <div class="input-field" style="width: 26.6vw;">
+                                        <label>Nome</label>
+                                        <input type="text" name="nome_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 7.9vw;">
+                                        <label>Número VW</label>
+                                        <input type="number" name="numeroVW_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 7.9vw;">
+                                        <label>Gênero</label>
+                                        <select required name="genero_imediato">
+                                            <option disabled selected>Selecione</option>
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field" style="width: 3.7vw;">
+                                        <label>Idade</label>
+                                        <input type="number" name="idade_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.5vw;">
+                                        <label>Tempo de VW</label>
+                                        <input type="number" name="tempo_de_VW_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 5.8vw;">
+                                        <label>Categoria</label>
+                                        <input type="text" name="categoria_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Último GAP</label>
+                                        <input type="text" name="ultimoGAP_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Último MBO</label>
+                                        <input type="text" name="ultimoMBO_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 7.9vw;">
+                                        <label>Última avaliação geral</label>
+                                        <input type="text" name="ultima_avaliacao_geral_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 26.6vw;">
+                                        <label>Critérios de acesso</label>
+                                        <input type="text" name="criterios_de_acesso_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Eixo What</label>
+                                        <input type="number" name="eixoWhat_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 10.1vw;">
+                                        <label>Posição anterior no 9Box</label>
+                                        <input type="number" name="posicao_anterior_9box_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 26.6vw;">
+                                        <label>Critérios de apontamento</label>
+                                        <input type="text" name="criterios_de_apontamento_imediato" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Eixo How</label>
+                                        <input type="number" name="eixoHow_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 10.1vw;">
+                                        <label>Posição atual no 9Box</label>
+                                        <input type="text" name="posicao_atual_9box_imediato" require>
+                                    </div>
+
+                                    <div class="input-field" style="width: 5.3vw;">
+                                        <label>Etapa NDP</label>
+                                        <input type="text" name="etapa_NDP_imediato" required>
+                                    </div>
+
+                                    <div style="width:100vh"></div>
+
+                                    <div class="input-field" style="width: 400px; height: 200px;">
+                                        <label>Ações de Desenvolvimento</label>
+                                        <textarea id="txtArea" name="acoes_de_desenvolvimento_imediato" required
+                                            rows="10" cols="70"></textarea>
+                                    </div>
+
+                                    <div class="input-field" style="width: 400px; height: 200px;">
+                                        <label>Comentários</label>
+                                        <textarea id="txtArea" name="comentarios_imediato" required rows="10"
+                                            cols="70"></textarea>
+                                    </div>
+
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <!-------------------- SUCESSOR IDEAL -------------------->
+
+
+                <div class="tab">
+                    <header>Sucessor Ideal</header>
+
+                    <div class="form first" style="width: 45vw;">
+                        <div class="details personal">
+
+
+
+                            <div class="fields">
+                            <input type="file" name="path_arquivos_ideal" accept="image/png, image/jpeg" s>
+
+                            <div style="width: 1000px;"></div>
+
+                            <div class="input-field" style="width: 26.6vw;">
+                                <label>Nome</label>
+                                <input type="text" name="nome_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 7.9vw;">
+                                <label>Número VW</label>
+                                <input type="number" name="numeroVW_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 7.9vw;">
+                                <label>Gênero</label>
+                                <select required name="genero_ideal">
+                                    <option disabled selected>Selecione</option>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-field" style="width: 3.7vw;">
+                                <label>Idade</label>
+                                <input type="number" name="idade_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 4.5vw;">
+                                <label>Tempo de VW</label>
+                                <input type="number" name="tempo_de_VW_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 5.8vw;">
+                                <label>Categoria</label>
+                                <input type="text" name="categoria_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 4.2vw;">
+                                <label>Último GAP</label>
+                                <input type="text" name="ultimoGAP_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 4.2vw;">
+                                <label>Último MBO</label>
+                                <input type="text" name="ultimoMBO_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 7.9vw;">
+                                <label>Última avaliação geral</label>
+                                <input type="text" name="ultima_avaliacao_geral_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 26.6vw;">
+                                <label>Critérios de acesso</label>
+                                <input type="text" name="criterios_de_acesso_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 4.2vw;">
+                                <label>Eixo What</label>
+                                <input type="number" name="eixoWhat_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 10.1vw;">
+                                <label>Posição anterior no 9Box</label>
+                                <input type="number" name="posicao_anterior_9box_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 26.6vw;">
+                                <label>Critérios de apontamento</label>
+                                <input type="text" name="criterios_de_apontamento_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 4.2vw;">
+                                <label>Eixo How</label>
+                                <input type="number" name="eixoHow_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 10.1vw;">
+                                <label>Posição atual no 9Box</label>
+                                <input type="text" name="posicao_atual_9box_ideal" required>
+                            </div>
+
+                            <div class="input-field" style="width: 5.3vw;">
+                                <label>Etapa NDP</label>
+                                <input type="text" name="etapa_NDP_ideal" required>
+                            </div>
+
+                            <div style="width:100vh"></div>
+
+                            <div class="input-field" style="width: 400px; height: 200px;">
+                                <label>Ações de Desenvolvimento</label>
+                                <textarea id="txtArea" name="acoes_de_desenvolvimento_ideal" required rows="10"
+                                    cols="70"></textarea>
+                            </div>
+
+                            <div class="input-field" style="width: 400px; height: 200px;">
+                                <label>Comentários</label>
+                                <textarea id="txtArea" name="comentarios_ideal" required rows="10" cols="70"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                < <!-------------------- SUCESSOR FUTURO -------------------->
+
+
+                    <div class="tab">
+                        <header>Sucessor Futuro</header>
+
+                        <div class="form first" style="width: 45vw;">
+                            <div class="details personal">
+
+
+
+
+                                <div class="fields">
+                                    <input type="file" name="path_arquivos_futuro" accept="image/png, image/jpeg"
+                                        style="width: 26.6vw;">
+
+                                    <div style="width: 1000px;"></div>
+                                    <div class="input-field" style="width: 26.6vw;">
+                                        <label>Nome</label>
+                                        <input type="text" name="nome_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 7.9vw;">
+                                        <label>Número VW</label>
+                                        <input type="number" name="numeroVW_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 7.9vw;">
+                                        <label>Gênero</label>
+                                        <select required name="genero_futuro">
+                                            <option disabled selected>Selecione</option>
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field" style="width: 3.7vw;">
+                                        <label>Idade</label>
+                                        <input type="number" name="idade_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.5vw;">
+                                        <label>Tempo de VW</label>
+                                        <input type="number" name="tempo_de_VW_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 5.8vw;">
+                                        <label>Categoria</label>
+                                        <input type="text" name="categoria_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Último GAP</label>
+                                        <input type="text" name="ultimoGAP_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Último MBO</label>
+                                        <input type="text" name="ultimoMBO_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 7.9vw;">
+                                        <label>Última avaliação geral</label>
+                                        <input type="text" name="ultima_avaliacao_geral_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 26.6vw;">
+                                        <label>Critérios de acesso</label>
+                                        <input type="text" name="criterios_de_acesso_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Eixo What</label>
+                                        <input type="number" name="eixoWhat_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 10.1vw;">
+                                        <label>Posição anterior no 9Box</label>
+                                        <input type="number" name="posicao_anterior_9box_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 26.6vw;">
+                                        <label>Critérios de apontamento</label>
+                                        <input type="text" name="criterios_de_apontamento_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 4.2vw;">
+                                        <label>Eixo How</label>
+                                        <input type="number" name="eixoHow_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 10.1vw;">
+                                        <label>Posição atual no 9Box</label>
+                                        <input type="text" name="posicao_atual_9box_futuro" required>
+                                    </div>
+
+                                    <div class="input-field" style="width: 5.3vw;">
+                                        <label>Etapa NDP</label>
+                                        <input type="text" name="etapa_NDP_futuro" required>
+                                    </div>
+
+                                    <div style="width:100vh"></div>
+
+                                    <div class="input-field" style="width: 400px; height: 200px;">
+                                        <label>Ações de Desenvolvimento</label>
+                                        <textarea id="txtArea" name="acoes_de_desenvolvimento_futuro" required rows="10"
+                                            cols="70"></textarea>
+                                    </div>
+
+                                    <div class="input-field" style="width: 400px; height: 200px;">
+                                        <label>Comentários</label>
+                                        <textarea id="txtArea" name="comentarios_futuro" required rows="10"
+                                            cols="70"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    </div>
+
+
+
+                    <!-- <div style="overflow:auto;">
+                        <div style="float:right;">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        </div>
+                    </div> -->
+
+                    <div class="buttons">
+
+                        <button class="btn effect01" id="prevBtn" onclick="nextPrev(-1)"><span>Voltar</span></a>
+                        </button>
+
+                        <button class="btn effect01" id="nextBtn" onclick="nextPrev(1)"><span>Próximo</span></a>
+                        </button>
+                    </div>
+
+
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                    </div>
+                    </div>
+
+
+
+                    <button class="btn effect01" type="reset"><span>Limpar Tudo</span></a>
+                    </button>
+                        
+                    
+
+            </form>
+            <script src="script.js"></script>
+    </body>
+
+</html>

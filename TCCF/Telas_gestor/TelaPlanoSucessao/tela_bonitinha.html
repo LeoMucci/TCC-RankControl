@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+   
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+     <!----===== Bootstrap ===== -->
+
+     
+    <title>Rank & Control - Home </title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logonova.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Rank & Control</span>
+                    
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                
+                <!--  
+                    Esta tela deixa o Home selecionado
+                    Para deixar outos selecionados coloque no <a hrerf>
+                        style = 
+                        background-color: var(--primary-color);
+                        border-left: 5px solid #0e2230;
+                -->
+
+
+
+
+                <ul class="menu-links">
+                    <li class="nav-linkhome">
+                        <a href="../../Login/tela_home.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../TelaPlanoSucessao/index.html" style="background-color: var(--primary-color);
+                        border-left: 5px solid #0e2230;;">
+                            <i class='bx bx-briefcase icon' ></i>
+                            <span class="text nav-text">Plano de sucessão</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../Tela9Box/index.html">
+                            <i class='bx bxs-inbox icon'></i>
+                            <span class="text nav-text">Nine Box</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="../TelaPesquisa/index.html">
+                            <i class='bx bx-search icon' ></i>
+                            <span class="text nav-text">Pesquisa</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+
+
+                <li class="nav-link">
+                    <a href="../SobreNos/index.html">
+                        <i class='bx bxs-group icon' ></i>
+                        <span class="text nav-text">Sobre Nós</span>
+                    </a>
+                </li>
+                
+
+
+
+                <li class="">
+                    <a href="../../Login/index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+            
+               
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+
+        
+         <!-- <form action="teste.php" method="post">
+            <div class="container1">
+                <input type="submit" placeholder="Pesquise a chapa!" name="numerovw">
+                <input type="text" placeholder="Pesquise a chapa!" name="numerovw">
+                <div class="search"></div>
+            </div>
+        </form> -->
+
+
+             <div class="container">
+                <header>Posição</header>
+        
+                <form action="cadastrar.php" method="POST">
+                    <div class="form first">
+                        <div class="details personal">
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Nome da UO</label>
+                                    <input type="text" name="nomeuo" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Diretoria</label>
+                                    <input type="text" name="diretoria" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>UO Abrev</label>
+                                    <input type="text" name="uoabrev" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Superior Direto</label>
+                                    <input type="text" name="superiordireto" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>É G70?</label>
+                                    <select required name="eg70">
+                                        <option disabled selected>Selecione</option>
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                       
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Superior G70</label>
+                                    <input type="text" name="superiorg70" required>
+                                </div>
+                            
+                                <div class="input-field">
+                                    <label>Local</label>
+                                    <input type="text" name="localvw" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Código da UO</label>
+                                    <input type="text" name="codigouo" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Job Evaluation</label>
+                                    <input type="text" name="jobevulation" required>
+                                </div>
+    
+                            </div>
+                        </div> 
+                    </div>
+                    </form>
+               
+            </div>
+
+    
+            <div class="container" style="top: 100px;">
+                <header>Ocupante</header>
+        
+                <form action="cadastrar.php" method="post">
+                    <div class="form first">
+                        <div class="details personal">
+                            
+
+                            
+                           <div class="fields">
+                            <center><img src="leo.jpg" class="ocupante"></center>
+
+
+                                <div class="input-field">
+                                    <label>Nome</label>
+                                    <input type="text" name="nome" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Cargo</label>
+                                    <input type="text" name="cargo" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>NumeroVW</label>
+                                    <input type="text" name="numerovw" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Grau</label>
+                                    <input type="text" name="grau" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Genero</label>
+                                    <select required name="genero">
+                                        <option disabled selected>Selecione</option>
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>
+                                       
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>idade</label>
+                                    <input type="text" name="idade" required>
+                                </div>
+                            
+                                <div class="input-field">
+                                    <label>tempo de VW</label>
+                                    <input type="text" name="tempovw" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Na posição Desde</label>
+                                    <input type="text" name="tempoposicao" required>
+                                </div>
+        
+    
+                            </div>
+                        </div> 
+                    </div>
+                    </form>
+            </div>
+
+            <div class="container" style="top: 150px;">
+                <header>Sucessor Imediato</header>
+        
+                <form action="cadastrar.php" method="post">
+                    <div class="form first">
+                        <div class="details personal">
+                            
+
+                            
+                           <div class="fields">
+                            <center><img src="leo.jpg" class="ocupante"></center>
+
+
+                                <div class="input-field">
+                                    <label>Nome</label>
+                                    <input type="text"  name="nome" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Número VW</label>
+                                    <input type="number" name="numerovw" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Idade</label>
+                                    <input type="number" name="idade" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Tempo de VW</label>
+                                    <input type="date" name="tempovw" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Genero</label>
+                                    <select required name="genero">
+                                        <option disabled selected>Selecione</option>
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>
+                                       
+                                    </select>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Categotia</label>
+                                    <input type="text" name="categoria" required>
+                                </div>
+                            
+                                <div class="input-field">
+                                    <label>último MBO</label>
+                                    <input type="text" name="ultimombo" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Última avaliação geral</label>
+                                    <input type="date" name="ultavalgeral" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Eixo How</label>
+                                    <input type="text" name="eixohow" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Eixo What</label>
+                                    <input type="text" name="eixowhat" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Último Gap</label>
+                                    <input type="text" name="ultimogap" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Posição anterior no 9Box</label>
+                                    <input type="number" name="posianterior9box" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Posição Atual no 9Box</label>
+                                    <input type="number" name="posiatual9box" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Criterios de acesso</label>
+                                    <input type="text" name="criacesso" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Ações de Desenvolvimento</label>
+                                    <input type="text" name="acdesenvolvimento" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Criterios de apontamento</label>
+                                    <input type="text" name="criapontamento" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Etapa do NDP</label>
+                                    <input type="text" name="etpndp" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Comentários</label>
+                                    <input type="text" name="comentarios" required>
+                                </div>
+
+                            </div>
+                        </div> 
+                    </div>
+                    </form>
+                
+            </div>
+
+
+
+             <div class="container" style="top: 150px;">
+                <header>Sucessor Ideal</header>
+        
+                <form action="cadastrar.php" method="post">
+                    <div class="form first">
+                        <div class="details personal">
+                            
+
+                            
+                           <div class="fields">
+                            <center><img src="leo.jpg" class="ocupante"></center>
+
+
+                            <div class="input-field">
+                                <label>Nome</label>
+                                <input type="text"  name="nome" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Número VW</label>
+                                <input type="number" name="numerovw" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Idade</label>
+                                <input type="number" name="idade" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Tempo de VW</label>
+                                <input type="date" name="tempovw" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Genero</label>
+                                <select required name="genero">
+                                    <option disabled selected>Selecione</option>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                   
+                                </select>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Categotia</label>
+                                <input type="text" name="categoria" required>
+                            </div>
+                        
+                            <div class="input-field">
+                                <label>último MBO</label>
+                                <input type="text" name="MBO" name="ultimombo" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Última avaliação geral</label>
+                                <input type="date" name="ultavalgeral" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Eixo How</label>
+                                <input type="text" name="eixohow" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Eixo What</label>
+                                <input type="text" name="eixowhat" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Último Gap</label>
+                                <input type="text" name="ultimogap" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Posição anterior no 9Box</label>
+                                <input type="number" name="posianterior9box" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Posição Atual no 9Box</label>
+                                <input type="number" name="posiatual9box" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Criterios de acesso</label>
+                                <input type="text" name="criacesso" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Ações de Desenvolvimento</label>
+                                <input type="text" name="acdesenvolvimento" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Criterios de apontamento</label>
+                                <input type="text" name="criapontamento" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Etapa do NDP</label>
+                                <input type="text" name="etpndp" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Comentários</label>
+                                <input type="text" name="comentarios" required>
+                            </div>
+
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+        </div>                        
+
+                                <div class="container" style="top: 150px;">
+                                    <header>Sucessor Futuro</header>
+                            
+                                    <form action="cadastrar.php" method="post">
+                                        <div class="form first">
+                                            <div class="details personal">
+                                                
+                    
+                                                
+                                               <div class="fields">
+                                                <center><img src="leo.jpg" class="ocupante"></center>
+                    
+                    
+                                                <div class="input-field">
+                                                    <label>Nome</label>
+                                                    <input type="text"  name="nome" required>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Número VW</label>
+                                                    <input type="number" name="numerovw" required>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Idade</label>
+                                                    <input type="number" name="idade" required>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Tempo de VW</label>
+                                                    <input type="date" name="tempovw" required>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Genero</label>
+                                                    <select required name="genero">
+                                                        <option disabled selected>Selecione</option>
+                                                        <option>Masculino</option>
+                                                        <option>Feminino</option>
+                                                       
+                                                    </select>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Categotia</label>
+                                                    <input type="text" name="categoria" required>
+                                                </div>
+                                            
+                                                <div class="input-field">
+                                                    <label>último MBO</label>
+                                                    <input type="text" name="MBO" name="ultimombo" required>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Última avaliação geral</label>
+                                                    <input type="date" name="ultavalgeral" required>
+                                                </div>
+                        
+                                                <div class="input-field">
+                                                    <label>Eixo How</label>
+                                                    <input type="text" name="eixohow" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Eixo What</label>
+                                                    <input type="text" name="eixowhat" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Último Gap</label>
+                                                    <input type="text" name="ultimogap" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Posição anterior no 9Box</label>
+                                                    <input type="number" name="posianterior9box" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Posição Atual no 9Box</label>
+                                                    <input type="number" name="posiatual9box" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Criterios de acesso</label>
+                                                    <input type="text" name="criacesso" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Ações de Desenvolvimento</label>
+                                                    <input type="text" name="acdesenvolvimento" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Criterios de apontamento</label>
+                                                    <input type="text" name="criapontamento" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Etapa do NDP</label>
+                                                    <input type="text" name="etpndp" required>
+                                                </div>
+                
+                                                <div class="input-field">
+                                                    <label>Comentários</label>
+                                                    <input type="text" name="comentarios" required>
+                                                </div>
+                    
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <input type='submit' value="Enviar Dados" class="input">
+                                        <input type="reset" value="Limpar Tudo" class="input">
+                                    </form>
+                                </div> -->
+                            
+            </div> -->
+
+    </section>
+    
+    
+        <script src="script.js"></script>
+
+  
+
+</body>
+</html>

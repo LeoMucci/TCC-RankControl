@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Account Settings UI Design</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<section class="py-4 my-5 mb-5">
+		<div class="container">
+
+
+			<button class="learn-more">
+				<span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+				</span>
+				<span class="button-text">Voltar</span>
+			  </button>
+
+
+
+
+
+			<h1 class="mb-5" style="color:white";>Plano de Sucessão</h1>
+			<div class="shadow rounded-lg d-block d-sm-flex" id="corf">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+
+						<div class="img-square text-center mb-3">
+							<img src="img/logonova.png" alt="Image" style="width: 40%;">
+
+
+
+						</div>
+						<h4 class="text-center"></h4>
+					</div>
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab"
+							aria-controls="account" aria-selected="true">
+							<i class="fa fa-user text-center mr-1"></i>
+							Posição
+						</a>
+						<a class="nav-link" id="text-tab" data-toggle="pill" href="#text" role="tab"
+							aria-controls="text" aria-selected="false">
+							<i class="fa fa-key text-center mr-1"></i>
+							Ocupante
+						</a>
+						<a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab"
+							aria-controls="security" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i>
+							Sucessor Imediato
+						</a>
+						<a class="nav-link" id="application-tab" data-toggle="pill" href="#application" role="tab"
+							aria-controls="application" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i>
+							Sucessor Ideal
+						</a>
+						<a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification" role="tab"
+							aria-controls="notification" aria-selected="false">
+							<i class="fa fa-user text-center mr-1"></i>
+							Sucessor Futuro
+						</a>
+					</div>
+				</div>
+
+				<!--------------------- Posição ------------------------->
+
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+						<h3 class="mb-4">Posição</h3>
+						<div class="row">
+
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Nome da UO</label>
+									<input type="text" class="form-control" readonly=“true” value="<?php echo $registro_ocupante['nome_ocupante'];?>">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Diretoria</label>
+									<input type="text" class="form-control" value="Acharya">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Número VW superior</label>
+									<input type="text" class="form-control" value="1234567">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Superior Direto</label>
+									<input type="text" class="form-control" value="+91 9876543215">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>UO Abrev</label>
+									<input type="text" class="form-control" value="Kiran Workspace">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>É G70?</label>
+									<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Número VW superior G70</label>
+									<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Superior G70</label>
+									<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Local</label>
+									<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Código da UO</label>
+									<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Job evaluation</label>
+									<input type="text" class="form-control" value="UI Developer">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--------------------- Ocupante ------------------------->
+
+					<div class="tab-pane fade" id="text" role="tabpanel" aria-labelledby="text-tab">
+						<h3 class="mb-4">Ocupante</h3>
+
+						<div class="row">
+
+						<div class="img-square text-left mb-3" style="width: 100px ;">
+							<img src="img/leo.jpg" alt="Image" class="shadow" style="width: 10vh;">
+						</div>
+
+
+						
+
+						
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Nome</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Cargo</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Número VW</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-1">
+								<div class="form-group">
+									<label>Grau</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-1">
+								<div class="form-group">
+									<label>Gênero</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-1">
+								<div class="form-group">
+									<label>Idade</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Tempo de VW</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Na Posição Desde</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Último GAP</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Último MBO</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Última Avaliação Geral</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Critérios de Acesso</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Eixo What</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Posição Anterior do 9-Box</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Critérios de Apontamento</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Próximos Passos</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Eixo How</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Posição Atual do 9-Box</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						
+						
+					</div>
+					</div>
+
+					<!--------------------- Sucessor Imediato ------------------------->
+
+					<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+						<h3 class="mb-4">Sucessor Imediato</h3>
+						<div class="row">
+
+							<div class="img-square text-left mb-3" style="width: 100px ;">
+								<img src="img/leo.jpg" alt="Image" class="shadow" style="width: 10vh;">
+							</div>
+	
+	
+							
+	
+							
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Nome</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Número VW</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-1">
+									<div class="form-group">
+										<label>Gênero</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-1">
+									<div class="form-group">
+										<label>Idade</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Tempo de VW</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Categoria</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Último GAP</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Último MBO</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-3">
+									<div class="form-group">
+										<label>Última Avaliação Geral</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Critérios de Acesso</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Eixo What</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Posição Anterior do 9-Box</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Critérios de Apontamento</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Eixo How</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Posição Atual do 9-Box</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Etapa NDP</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Ações de Desenvolvimento</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Comentários</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+						</div>
+					</div>
+
+					<!--------------------- Sucessor Ideal ------------------------->
+
+					<div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-tab">
+						<h3 class="mb-4">Sucessor Ideal</h3>
+
+						<div class="row">
+
+							<div class="img-square text-left mb-3" style="width: 100px ;">
+								<img src="img/leo.jpg" alt="Image" class="shadow" style="width: 10vh;">
+							</div>
+	
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Nome</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Número VW</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-1">
+									<div class="form-group">
+										<label>Gênero</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-1">
+									<div class="form-group">
+										<label>Idade</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Tempo de VW</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Categoria</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Último GAP</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Último MBO</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-3">
+									<div class="form-group">
+										<label>Última Avaliação Geral</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Critérios de Acesso</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Eixo What</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Posição Anterior do 9-Box</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Critérios de Apontamento</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+							
+								<div class="col-md-2">
+									<div class="form-group">
+										<label>Eixo How</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+	
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Posição Atual do 9-Box</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Etapa NDP</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Ações de Desenvolvimento</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>Comentários</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+
+						</div>
+					</div>
+
+					<!--------------------- Sucessor Futuro ------------------------->
+
+					<div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+						<h3 class="mb-4">Sucessor Futuro</h3>
+						<div class="form-group">
+							<div class="row">
+
+								<div class="img-square text-left mb-3" style="width: 100px ;">
+									<img src="img/leo.jpg" alt="Image" class="shadow" style="width: 10vh;">
+								</div>
+		
+		
+								
+		
+								
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Nome</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+	
+									<div class="col-md-2">
+										<div class="form-group">
+											<label>Número VW</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-1">
+										<div class="form-group">
+											<label>Gênero</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-1">
+										<div class="form-group">
+											<label>Idade</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-2">
+										<div class="form-group">
+											<label>Tempo de VW</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Categoria</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-2">
+										<div class="form-group">
+											<label>Último GAP</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-2">
+										<div class="form-group">
+											<label>Último MBO</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-3">
+										<div class="form-group">
+											<label>Última Avaliação Geral</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Critérios de Acesso</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-2">
+										<div class="form-group">
+											<label>Eixo What</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Posição Anterior do 9-Box</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Critérios de Apontamento</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								
+									<div class="col-md-2">
+										<div class="form-group">
+											<label>Eixo How</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+		
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Posição Atual do 9-Box</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+	
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Etapa NDP</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+	
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Ações de Desenvolvimento</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+	
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Comentários</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+	
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
